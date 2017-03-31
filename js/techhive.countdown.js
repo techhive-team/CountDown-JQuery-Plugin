@@ -2,10 +2,40 @@
 	
 	$.fn.techhiveCountDownInit=function(){
 		console.log(this);
+		var htmlContent='<div class="dash weeks_dash">'+
+                '<span class="dash_title">weeks</span>'+
+                '<div class="digit">0</div>'+
+                '<div class="digit">0</div>'+
+            '</div>'+
+
+            '<div class="dash days_dash">'+
+                '<span class="dash_title">days</span>'+
+                '<div class="digit">0</div>'+
+                '<div class="digit">0</div>'+
+            '</div>'+
+
+            '<div class="dash hours_dash">'+
+                '<span class="dash_title">hours</span>'+
+                '<div class="digit">0</div>'+
+                '<div class="digit">0</div>'+
+            '</div>'+
+
+            '<div class="dash minutes_dash">'+
+                '<span class="dash_title">minutes</span>'+
+                '<div class="digit">0</div>'+
+                '<div class="digit">0</div>'+
+            '</div>'+
+
+            '<div class="dash seconds_dash">'+
+                '<span class="dash_title">seconds</span>'+
+                '<div class="digit">0</div>'+
+                '<div class="digit">0</div>'+
+            '</div>';
 		for (var i=0; i<this.length; i++)
 		  {
 			  var selector=$(this[i]),
 			  date=selector.attr('tech-Date');
+			  selector.html(htmlContent);
 				this.techhiveCountDown(date,selector);
 		  }
 	}
