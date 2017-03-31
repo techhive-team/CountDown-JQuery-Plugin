@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>TechHive Countdown Demo</title>
+
+</head>
+<style type="text/css">
+    .mydateCounter {
+        display: flex;
+        height: 78px;
+        margin: 0 auto;
+        width: 405px;
+    }
+    
+    .dash {
+        background: transparent url("images/dash.png") no-repeat;
+        background-size: 54px 31px !important;
+        float: left;
+        height: 56px;
+        margin-left: 10px;
+        position: relative;
+        width: 68px;
+    }
+    
+    .dash .digit {
+        font-size: 24px;
+        font-weight: bold;
+        float: left;
+        width: 26px;
+        text-align: center;
+        font-family: Times;
+        color: #555;
+        position: relative;
+    }
+    
+    .dash_title {
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        left: 0px;
+        font-size: 9pt;
+        color: #555;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+</style>
+
+<body>
+    <div>
+        <center><h1>Techhive CountDown JQuery Plugin</h1><br/><span>Created By <b>TechHive Team</b></span><br/><br/></center>
+        <div class="mydateCounter" tech-date="2017-11-25 12:00:00">
+            <div class="dash weeks_dash">
+                <span class="dash_title">weeks</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash days_dash">
+                <span class="dash_title">days</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash hours_dash">
+                <span class="dash_title">hours</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash minutes_dash">
+                <span class="dash_title">minutes</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+            <div class="dash seconds_dash">
+                <span class="dash_title">seconds</span>
+                <div class="digit">0</div>
+                <div class="digit">0</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/techhive.countdown.js"></script>
+    <script>
+        $('.mydateCounter').techhiveCountDownInit();
+    </script>
+</body>
+
+</html>
