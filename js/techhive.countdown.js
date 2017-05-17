@@ -40,7 +40,7 @@
 		// targetSelector=this;
 		console.log(targetSelector);
 		targetIdName = $(this).attr('class');
-		$(targetSelector).find('.digit').html('<div class="top animated"></div><div class="bottom animated"></div>');
+		// $(targetSelector).find('.digit').html('<div class="top animated"></div><div class="bottom animated"></div>');
 		$(this).doCountDown(targetSelector, diffSecs, 500);
 
 		return this;
@@ -116,9 +116,14 @@
 			setTimeout(function () {
 				console.log("timeout");
 				$this.find('.' + dash).find(' .digit').addClass("flipOutY").removeClass('flipInY');
-			}, duration);
+			}, 500);
 		} else {
-			$('.' + dash).find(' .digit').html(n).removeClass('flipOutY flipInY');
+			// $('.' + dash).find(' .digit').html(n).removeClass('flipOutY flipInY');
+			$this.find('.' + dash).find(' .digit').html(n).addClass('flipInY').removeClass("flipOutY");
+			// setTimeout(function () {
+			// 	console.log("timeout");
+			// 	$this.find('.' + dash).find(' .digit').addClass("flipOutY").removeClass('flipInY');
+			// }, 500);
 		}
 		// for (var i = ($this.find('.' + dash + ' .digit').length - 1); i >= 0; i--) {
 		// 	var d = n % 10;
