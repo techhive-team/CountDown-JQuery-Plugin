@@ -2,58 +2,38 @@
 
 <head>
     <title>TechHive Countdown Demo</title>
-
+    
 </head>
-<style type="text/css">
-    .mydateCounter {
-        display: flex;
-        height: 78px;
-        margin: 0 auto;
-        width: 405px;
-    }
-    
-    .dash {
-        background: transparent url("images/dash.png") no-repeat;
-        background-size: 54px 31px !important;
-        float: left;
-        height: 56px;
-        margin-left: 10px;
-        position: relative;
-        width: 68px;
-    }
-    
-    .dash .digit {
-        font-size: 24px;
-        font-weight: bold;
-        float: left;
-        width: 26px;
-        text-align: center;
-        font-family: Times;
-        color: #555;
-        position: relative;
-    }
-    
-    .dash_title {
-        position: absolute;
-        display: block;
-        bottom: 0px;
-        left: 0px;
-        font-size: 9pt;
-        color: #555;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-</style>
+<link rel="stylesheet" href="./css/animate.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
 
 <body>
-    <div>
-        <center><h1>Techhive CountDown JQuery Plugin</h1><br/><span>Created By <b>TechHive Team</b></span><br/><br/></center>
+    <div class="wrapper">
+        <center>
+            <h1>Techhive CountDown JQuery Plugin</h1><br/><span>Created By <b>TechHive Team</b></span><br/><br/></center>
         <div class="mydateCounter" tech-date="2017-11-25 12:00:00"></div>
     </div>
+    <!--<div id="aniBlock" class="animated">0
+
+    </div>-->
+    <!--<button onclick="animateDiv()">Animate</button>-->
     <script src="js/jquery.js"></script>
     <script src="js/techhive.countdown.js"></script>
     <script>
         $('.mydateCounter').techhiveCountDownInit();
+        // function animateDiv() {
+        //     var i = 0;
+        //     setInterval(function () {
+        //         i=i<10?"0"+i:i;
+        //         $('#aniBlock').html(i).addClass('flipInY').removeClass("flipOutY");
+        //         setTimeout(function () {
+        //             $('#aniBlock').addClass("flipOutY").removeClass('flipInY');
+        //         }, 500);
+        //         // $('#aniBlock').html(i).addClass('flipOutY').delay(800).removeClass('flipOutY');
+        //         i++;
+        //     }, 1000);
+        // }
     </script>
 </body>
 

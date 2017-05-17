@@ -1,0 +1,54 @@
+body { font-family: 'Open Sans', sans-serif; background: url(../images/comingsoon.jpg) no-repeat; 
+background-position: center center; background-size: cover; height: 100%; position: absolute; left: 0; right: 0; bottom: 0; top: 0; color: #fff !important; }
+#aniBlock { font-size: 70px; font-weight: bold; display: inline-block; width: auto; width:80px;}
+.wrapper {  
+    margin: 0 auto;
+    width: 945px; 
+    max-width: 100%;
+}
+.mydateCounter {    
+       
+        margin-top:40px;
+        position: relative;
+
+
+    }
+  
+    
+    .dash {
+        background: transparent url("images/dash.png") no-repeat;
+        background-size: 54px 31px !important;
+        float: left;
+        
+        margin-left: 10px;
+        position: relative;
+      
+    }
+    
+    .dash .digit {
+        z-index: 10;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: bold;
+    min-width: 175px;
+    max-width: 175px;
+    white-space: nowrap;
+    font-size: 124px;
+    line-height: 124px;
+    color: rgb(138, 43, 255);
+        /*float: left;*/
+        width: 26px;
+        text-align: center;
+        font-family: Times;
+    }
+    
+    .dash_title {
+        position: absolute;
+        display: block;
+        font-size: 10pt;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        top:46px; left: 59px;
+        z-index: 20;
+        font-weight: bold;
+    }
